@@ -1,0 +1,9 @@
+id,site,purpose,start,end,disposition,observed
+R1,N,室外安装,16,21,declined,13
+R2,N,室内安装,18,21,fulfilled,13
+R3,S,室内安装,26,34,declined,18
+R4,N,室内安装,30,37,declined,23
+R5,S,室外安装,32,40,declined,26
+R6,M,备用电源,38,43,canceled,31
+R7,N,备用电源,40,45,declined,35
+R8,N,室外安装,45,52,declined,39

@@ -1,0 +1,5 @@
+id,kind,unit,source,dest,planned,status
+W1,transfer,A5,S,N,24,applied
+W2,repair,A3,S,S,26,accepted
+W3,transfer,A6,M,N,35,proposed
+W4,transfer,A4,S,N,39,proposed
