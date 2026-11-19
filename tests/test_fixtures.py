@@ -4,8 +4,8 @@ import unittest
 
 
 FIXTURES = Path(__file__).resolve().parents[1] / "fixtures"
-HEADERS = {'stock': ['id', 'kind', 'depot'], 'parts': ['kit', 'unit'], 'certifications': ['entity', 'purpose', 'site', 'start', 'end'], 'movements': ['id', 'unit', 'kind', 'site', 'lower', 'upper', 'received'], 'requests': ['id', 'site', 'purpose', 'start', 'end', 'disposition', 'observed'], 'reservations': ['id', 'request', 'entity', 'start', 'end', 'status'], 'work_orders': ['id', 'kind', 'unit', 'source', 'dest', 'planned', 'status'], 'routes': ['source', 'dest', 'kind', 'min_hours'], 'amendments': ['id', 'replaces', 'field', 'value', 'recorded']}
-LINKS = [('parts', 'unit', 'stock', 'id'), ('movements', 'unit', 'stock', 'id'), ('reservations', 'request', 'requests', 'id'), ('amendments', 'replaces', 'movements', 'id')]
+HEADERS = {'amendments': ['id', 'replaces', 'field', 'value', 'recorded'], 'certifications': ['entity', 'purpose', 'site', 'start', 'end'], 'leg_receipts': ['delivery', 'receipt', 'leg', 'kind', 'occurred', 'received'], 'legs': ['id', 'work_order', 'service', 'after', 'replaces_reservation'], 'movement_constraints': ['earlier', 'later', 'min_gap', 'evidence'], 'movements': ['id', 'unit', 'kind', 'site', 'lower', 'upper', 'received'], 'parts': ['kit', 'unit'], 'requests': ['id', 'site', 'purpose', 'start', 'end', 'disposition', 'observed'], 'reservations': ['id', 'request', 'entity', 'start', 'end', 'status'], 'routes': ['source', 'dest', 'kind', 'min_hours'], 'services': ['id', 'kind', 'source', 'dest', 'start', 'end', 'slots', 'unit_kind'], 'stock': ['id', 'kind', 'depot'], 'work_orders': ['id', 'kind', 'unit', 'source', 'dest', 'planned', 'status']}
+LINKS = [('parts', 'unit', 'stock', 'id'), ('movements', 'unit', 'stock', 'id'), ('reservations', 'request', 'requests', 'id'), ('amendments', 'replaces', 'movements', 'id'), ('legs', 'work_order', 'work_orders', 'id'), ('legs', 'service', 'services', 'id'), ('leg_receipts', 'leg', 'legs', 'id'), ('movement_constraints', 'earlier', 'movements', 'id'), ('movement_constraints', 'later', 'movements', 'id')]
 
 
 def read(name):

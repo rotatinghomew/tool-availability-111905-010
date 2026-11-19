@@ -1,0 +1,4 @@
+earlier,later,min_gap,evidence
+M2,M3,0,同一部件扫码后才验收
+M4,M5,3,已记录离站与车程
+M5,M6,0,司机与收货员对账
