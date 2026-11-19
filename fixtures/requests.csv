@@ -1,4 +1,13 @@
-id,site,use,window,requested,result,reason,asset
-Q1,A,drill,W1,08:00,denied,no_compatible_asset,
-Q2,B,cut,W1,08:00,partial,missing_part,T2
-Q3,A,cut,W2,08:20,fulfilled,,T1
+id,station,use,start,end,kind,combination,outcome
+Q1,北,刻字,1T09:00,1T10:30,protected,A1;A2;A12,used
+Q2,南,刻字,1T09:00,1T11:00,requested,,refused
+Q3,西,刻字,1T10:00,1T12:00,protected,A9;A10;A14,used
+Q4,南,展示,1T10:00,1T12:00,protected,A7;A8,no_show
+Q5,北,展示,1T11:00,1T13:00,requested,,partial
+Q6,北,刻字,2T10:00,2T13:00,protected,A1;A2;A12,
+Q7,南,刻字,2T10:00,2T12:30,protected,A5;A6;A13,
+Q8,西,刻字,2T11:00,2T13:00,protected,A9;A10;A14,
+Q9,南,展示,2T10:00,2T14:00,protected,A7;A8,
+Q10,北,展示,2T11:00,2T14:00,requested,,
+Q11,西,展示,2T11:00,2T15:00,requested,,
+Q12,北,刻字,3T09:00,3T11:00,requested,,

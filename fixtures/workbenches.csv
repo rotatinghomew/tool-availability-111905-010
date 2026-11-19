@@ -1,0 +1,6 @@
+id,bench,station,skill,start,end,minutes
+M1,B1,南,accept,2T08:30,2T10:30,15
+M2,B1,南,repair,2T08:30,2T10:30,45
+M3,B2,北,accept,2T09:10,2T12:00,15
+M4,B2,北,repair,2T09:10,2T12:00,60
+M5,B3,西,accept,2T10:00,2T13:00,15

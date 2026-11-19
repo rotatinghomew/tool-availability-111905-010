@@ -1,0 +1,12 @@
+id,asset,station,kind,from,to,received,parent
+E1,A2,北,borrow,1T09:00,1T09:00,1T09:00,
+E2,A2,北,return,1T10:20,1T11:00,1T11:05,E1
+E3,A6,南,maintenance,1T08:30,1T11:00,1T08:30,
+E4,A4,北,borrow,1T09:15,1T09:15,1T09:15,
+E5,A4,北,return,1T10:50,1T11:40,1T12:00,E4
+E6,A10,西,borrow,1T10:00,1T10:00,1T10:00,
+E7,A10,西,return,1T11:50,1T12:20,1T12:20,E6
+E8,A6,南,maintenance,2T08:00,2T12:00,2T08:05,
+E9,A1,北,fault,2T09:20,2T09:20,2T09:21,
+E10,A4,北,return_exact,1T11:20,1T11:20,2T09:30,E5
+E11,A8,南,late,2T13:00,2T14:20,2T13:05,

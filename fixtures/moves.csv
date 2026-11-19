@@ -1,4 +1,13 @@
-id,asset,from_site,to_site,leg,depart,arrive_by,receipt,status,supersedes
-MV1,T1,A,B,1,09:00,10:00,E1,in_transit,
-MV2,T1,A,B,2,10:10,11:00,,planned,
-MV3,T2,B,A,1,09:30,10:30,,planned,
+id,leg,asset,protects,kind,occurred,received,prior
+T1,L1,A10,Q7,try_hold,2T07:00,2T07:00,
+T2,L1,A11,Q10,try_hold,2T07:01,2T07:01,
+T3,L2,A11,Q10,try_hold,2T07:02,2T07:02,T2
+T4,L1,A10,Q7,departed,2T08:00,2T08:01,T1
+T5,L1,A11,Q10,departed,2T08:00,2T08:01,T2
+T6,L1,A10,Q7,received,2T08:32,2T08:33,T4
+T7,L1,A11,Q10,received,2T08:32,2T08:33,T5
+T8,L2,,,cancelled,2T08:35,2T08:36,
+T9,L1,A10,Q7,accept_failed,2T08:50,2T08:52,T6
+T10,L5,A10,Q8,departed,2T09:30,2T09:31,T9
+T11,L5,A10,Q8,received,2T10:00,2T10:01,T10
+T12,L5,A10,Q8,accept_passed,2T10:15,2T10:15,T11
