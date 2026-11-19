@@ -1,0 +1,4 @@
+asset,site,part,certifications,state,as_of
+T1,A,P1,drill|cut,ready,08:00
+T2,B,P1,drill,ready,08:00
+T3,A,P2,cut,repair,08:00

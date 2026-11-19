@@ -1,0 +1,4 @@
+id,asset,from_site,to_site,leg,depart,arrive_by,receipt,status,supersedes
+MV1,T1,A,B,1,09:00,10:00,E1,in_transit,
+MV2,T1,A,B,2,10:10,11:00,,planned,
+MV3,T2,B,A,1,09:30,10:30,,planned,

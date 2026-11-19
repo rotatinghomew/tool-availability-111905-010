@@ -1,8 +1,0 @@
-id,kind,source,dest,start,end,slots,unit_kind
-L1,vehicle,M,S,35,37,1,battery
-L2,vehicle,S,N,38,41,1,battery|driver
-L3,vehicle,S,N,43,46,2,battery|driver
-L4,inspection,S,S,37,38,1,battery
-L5,inspection,N,N,41,43,1,battery|driver
-L6,inspection,N,N,46,47,1,battery|driver
-L7,repair,S,S,36,42,1,battery

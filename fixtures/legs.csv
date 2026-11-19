@@ -1,8 +1,0 @@
-id,work_order,service,after,replaces_reservation
-G1,W3,L1,,
-G2,W3,L4,G1,
-G3,W3,L2,G2,
-G4,W3,L5,G3,
-G5,W4,L2,,
-G6,W4,L5,G5,V2
-G7,W2,L7,,

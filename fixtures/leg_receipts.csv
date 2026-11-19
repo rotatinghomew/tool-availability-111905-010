@@ -1,6 +1,0 @@
-delivery,receipt,leg,kind,occurred,received
-DD1,RR1,G1,dispatched,35,35
-DD2,RR2,G1,arrived,37,37
-DD3,RR3,G2,passed,38,38
-DD4,RR3,G2,passed,38,39
-DD5,RR4,G3,canceled,38,40
